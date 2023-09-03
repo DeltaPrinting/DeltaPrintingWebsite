@@ -29,6 +29,15 @@
         <div class="container" style="background-color: rgba(255, 255, 255, 0.774); padding: 1%; max-width: 900px;">
             <h1 class="my-4" style="color: rgb(0, 0, 0); text-align: center;">Aanvraagformulier</h1>
             <form method="POST" action="https://formsubmit.co/27912a0c432325e723cb91de7dee4df8" enctype="multipart/form-data">
+              <!--Honeypot-->
+              <input type="text" name="_honey" style="display:none">
+
+              <!--Disable Captcha-->
+              <input type="hidden" name="_captcha" value="false">
+
+              <!--Succes Page-->
+              <input type="hidden" name="_next" value="https://deltaprinting.github.io/DeltaPrintingWebsite/success.html">
+
                 <div class="form-floating mb-3">
                     <input type="text" name="Naam" class="form-control" id="floatingName" placeholder="Naam" required>
                     <label for="floatingName">Naam en Achternaam</label>
