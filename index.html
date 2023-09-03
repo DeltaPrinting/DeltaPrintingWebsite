@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Delta Printing Aanvraagformulier</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+
+        <style>
+            body {
+              background-image: url('repeatLogo.png');
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container" style="background-color: rgba(241, 255, 110, 0.733); 
+        text-align: center; margin-bottom: 0%; padding: 1%; max-width: 900px;">
+                <div class="form-floating mb-3">
+                    <h5>Tip: Kijk eerst op deze websites voor een 3D model voordat je een op maat gemaakte 3D model aanvraagt:</h5>
+                    <a class="btn btn-primary" href="https://www.thingiverse.com/">Thingiverse.com</a>
+                    <a class="btn btn-primary" href="https://www.myminifactory.com/">Myminifactory.com</a>
+                </div>
+        </div>
+        <div class="container" style="background-color: rgba(255, 255, 255, 0.774); padding: 1%; max-width: 900px;">
+            <h1 class="my-4" style="color: rgb(0, 0, 0); text-align: center;">Aanvraagformulier</h1>
+            <form method="POST" action="https://formsubmit.co/deltaprintingaanvraagen@outlook.com" enctype="multipart/form-data">
+                <div class="form-floating mb-3">
+                    <input type="text" name="Naam" class="form-control" id="floatingName" placeholder="Naam" required>
+                    <label for="floatingName">Naam en Achternaam</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" name="Email" class="form-control" id="floatingEmail" placeholder="email" required>
+                    <label for="floatingEmail">Email</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" name="Aanvraag" id="floatingText" placeholder="text" style="height: 100px;"
+                    required></textarea>
+                    <label for="floatingText">Beschrijf jouw aanvraag</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input type="checkbox" name="Custom&nbsp;3D&nbsp;Model" aria-label="Checkbox for following text input">
+                        <h6 style="margin-bottom: 0px; margin-left: 10px;">3D model op maat</h6>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <input class="form-control" name="Foto's" type="file" id="floatingFile" multiple>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" name="Hoeveelheid" id="floatingNumber" placeholder="number" required>
+                    <label for="floatingNumber">Hoeveelheid</label>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle form-floating mb-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Beschikbare Kleuren
+                    </button>
+                    <h6 style="margin-bottom: 0px; margin-left: 10px; display: inline-block; font: bold; color: rgb(0, 0, 0);"> *Meer Kleuren in de toekomst*</h6>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <div class="dropdown-item">
+                        <input type="checkbox" aria-label="Checkbox for following text input"> 
+                        <h6 style="margin-bottom: 0px; margin-left: 10px; float: right;">Zwart</h6>
+                      </div>
+
+                      <div class="dropdown-item">
+                        <input type="checkbox" aria-label="Checkbox for following text input" >
+                        <h6 style="margin-bottom: 0px; margin-left: 10px; float: right;">Wit</h6>
+                      </div>
+
+                      <div class="dropdown-item">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                        <h6 style="margin-bottom: 0px; margin-left: 10px; float: right;">Oranje</h6>
+                      </div>
+
+                      <div class="dropdown-item">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                        <h6 style="margin-bottom: 0px; margin-left: 10px; float: right;">Bruin</h6>
+                      </div>
+
+                      <div class="dropdown-item">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                        <h6 style="margin-bottom: 0px; margin-left: 10px; float: right;">Groen</h6>
+                      </div>
+
+                      <div class="dropdown-item">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                        <h6 style="margin-bottom: 0px; margin-left: 10px; float: right;">Licht groen</h6>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                <div class="col-md-12, text-center">
+                    <button type="submit" class="btn btn-primary">Aanvragen</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
